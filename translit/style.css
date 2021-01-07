@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.element {
+    width: 50%;
+}
+
+.input-element {
+    height: 5%;
+    display: flex;
+    gap: 2px;
+    outline: none;
+}
+
+#input {
+    min-width: 1px;
+    flex: 5 1 auto;
+    border: none;
+    transition: all 0.5s ease;
+}
+
+.clear-button, .copy-button {
+    flex: 1 0 30px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+#input:focus, .clear-button:focus, .copy-button:focus {
+    outline: none;
+    box-shadow: 0 0 2px black;
+}
+
+#input:hover {
+    box-shadow: 0 0 5px black;
+}
+
+.clear-button:hover, .copy-button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px black;
+}
+
+.output-element {
+    height: 50%;
+    word-wrap: break-word;
+    text-align: center;
+    font-size: larger;
+}
+
+.copied-text {
+    position: absolute;
+    transition: all 0.2 ease-in-out;
+}
