@@ -29,7 +29,7 @@ const translitBase = [
     {ru: "ь", en: ""},
     {ru: "ъ", en: ""},
     {ru: "э", en: "e"},
-    {ru: "ы", en: "y"},
+    {ru: "ы", en: "i"},
     {ru: "ю", en: "yu"},
     {ru: "я", en: "ya"},
 ]
